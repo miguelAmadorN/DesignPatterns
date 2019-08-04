@@ -1,4 +1,4 @@
-PROJECT=Singleton
+PROJECT=state
 CFLAGS=-Wall
 LFLAGS=
 CC=g++

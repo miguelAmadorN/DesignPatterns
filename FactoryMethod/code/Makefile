@@ -1,20 +1,20 @@
-PROYECTO=FactoryMethod
+PROJECT=FactoryMethod
 CFLAGS=-Wall
 LFLAGS=
 CC=g++
 
-all: $(PROYECTO)
+all: $(PROJECT)
 
 %.o: %.cpp
 	$(CC) -c $< $(CFLAGS) 
 
-$(PROYECTO) : $(patsubst %.cpp,%.o,$(wildcard *.cpp))
+$(PROJECT) : $(patsubst %.cpp,%.o,$(wildcard *.cpp))
 	$(CC) $^ -o $@ $(LFLAGS) 
 
 .PHONY: clean
 
 clean:
-	rm -f *.o $(PROYECTO)
+	rm -f *.o $(PROJECT)
 	
 
 
