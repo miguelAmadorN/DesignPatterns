@@ -3,9 +3,11 @@
 #include <iostream>
 #include "WindowsFactory.h"
 #include "UbuntuFactory.h"
+
 /*
 	Client
 */
+
 #ifdef __linux__
 #define SO "Linux"
 #endif // __linux__
